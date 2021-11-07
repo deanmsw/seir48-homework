@@ -1,0 +1,77 @@
+<h1>New Battle Information</h1>
+
+
+<form action="<%= battles_path %>" method="post">
+
+<label>
+  Name Of Battle
+  <input name="name" type="text" required >
+</label>
+
+<label>
+  Theatre Of Battle
+  <input name="theatre" type="text">
+</label>
+
+<label>
+  Location Of Battle
+  <input name="location" type="text" >
+</label>
+
+<label>
+  Axis General
+  <input name="axis_general" type="text">
+</label>
+
+<label>
+  Axis General Picture
+  <input name="axis_general" type="text">
+</label>
+
+<label>
+  Allied General
+  <input name="allied_general" type="text">
+</label>
+
+<label>
+  Allied General Picture
+  <input name="allied_general" type="text">
+</label>
+
+<label>
+  Axis Casualties
+  <input name="axis_casualties" type="number">
+</label>
+
+<label>
+  Allied Casualties
+  <input name="allied_casualties" type="number">
+</label>
+
+<label>
+  Result Of Battle
+  <input name="result" type="text">
+</label>
+
+<label>
+  Date Battle Began
+  <input name="start_date" type="date">
+</label>
+
+<label>
+  Date Battle Ended
+  <input name="end_date" type="date">
+</label>
+
+<label>
+  Description Of Battle
+  <input name="description" type="text">
+</label>
+
+<label>
+  Image Of Battle
+  <input name="image" type="text">
+</label>
+
+<button>Create Battle</button>
+</form>

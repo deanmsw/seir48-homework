@@ -1,0 +1,55 @@
+<h1>Edit This Leaders Information</h1>
+
+<form action="/leaders/<%= @leaders.id %>" method="post">
+<div>
+  <label>
+    Rank:
+    <input name="title" type="text" placeholder="General" value="<%= @leaders.title %>">
+  </label>
+</div>
+
+<div>
+  <label>
+    First Name:
+    <input name="first_name" type="text" placeholder="John" value="<%= @leaders.first_name %>">
+  </label>
+</div>
+
+<div>
+  <label>
+    Surname:
+    <input name="surname" type="text" placeholder="Smith" value="<%= @leaders.surname %>">
+  </label>
+</div>
+
+<div>
+  <label>
+    Leaders Country:
+    <input name="country" type="text" placeholder="France" value="<%= @leaders.country %>">
+  </label>
+</div>
+
+<div>
+  <label>
+    Also Known As:
+    <input name="aka" type="text" placeholder="The ..." value="<%= @leaders.aka %>">
+  </label>
+</div>
+
+<div>
+  <label>
+    Leader Description:
+    <input name="description" type="text" placeholder="Description" value="<%= @leaders.description %>">
+  </label>
+</div>
+
+<div>
+  <label>
+    Image:
+    <input name="image" type="text" placeholder="Image" value="<%= @leaders.image %>">
+  </label>
+</div>
+
+<button>Update Leader</button>
+
+</form>

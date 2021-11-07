@@ -1,0 +1,20 @@
+<h1>Product Page</h1>
+
+<h2>Product Name: <%= @product["product_name"] %> </h2>
+
+
+<p>Description: <%= @product["description"] %></p>
+
+
+<p>Price: $<%= @product["price"] %></p>
+
+<p>Quantity: <%= @product["quantity"] %></p>
+
+<p>Location: <%= @product["location"] %></p>
+
+<img src="<%= @product["image"] %>" alt="<%= @product["product_name"] %>">
+
+<div>
+<a href="/materials/<%= @product["id"]%>/edit">Edit Listing</a>
+<a href="/materials/<%= @product["id"]%>/delete">Delete Listing</a>
+</div>

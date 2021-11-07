@@ -1,0 +1,60 @@
+<h1>Edit This Battles Information</h1>
+
+<form action="/battles/<%= @battles.id %>" method="post">
+<div>
+  <label>
+    Name of Battle:
+    <input name="name" type="text" placeholder="Battle" value="<%= @battles.name %>">
+  </label>
+</div>
+
+<div>
+  <label>
+    Name of Theatre:
+    <input name="theatre" type="text" placeholder="Theatre" value="<%= @battles.theatre %>">
+  </label>
+</div>
+
+<div>
+  <label>
+    Location of Battle:
+    <input name="location" type="text" placeholder="Location" value="<%= @battles.location %>">
+  </label>
+</div>
+
+<div>
+  <label>
+    Battle Result:
+    <input name="result" type="text" placeholder="Result" value="<%= @battles.result %>">
+  </label>
+</div>
+
+<div>
+  <label>
+    Start of Battle:
+    <input name="start_date" type="date" placeholder="Date" value="<%= @battles.start_date %>">
+  </label>
+</div>
+
+<div>
+  <label>
+    End of Battle:
+    <input name="end_date" type="date" placeholder="Date" value="<%= @battles.end_date %>">
+  </label>
+</div>
+<div>
+  <label>
+    Battle Description:
+    <input name="description" type="text" placeholder="Description" value="<%= @battles.description %>">
+  </label>
+</div>
+<div>
+  <label>
+    Image:
+    <input name="image" type="text" placeholder="Image" value="<%= @battles.image %>">
+  </label>
+</div>
+
+<button>Update Battle</button>
+
+</form>

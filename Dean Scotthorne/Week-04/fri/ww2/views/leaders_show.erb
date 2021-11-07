@@ -1,0 +1,21 @@
+<h1>WW2 Leader Information</h1>
+
+<h2>Rank: <%= @leaders.title %></h2>
+
+<h3>First Name: <%= @leaders.first_name %></h3>
+
+<h3>Surname: <%= @leaders.surname %></h3>
+
+<h3>Country: <%= @leaders.country %></h3>
+
+<h3>AKA: <%= @leaders.aka %></h3>
+
+<h3>Description</h3>
+<p> <%= @leaders.description %> </p>
+
+<img src="<%= @leaders.image %>" alt="<%= @leaders.surname %>">
+
+<div>
+<a href="/leaders/ <%= @leaders.id %>/edit" > Edit</a>
+<a href="/leaders/ <%= @leaders["id"] %>/delete" > Delete</a>
+</div>

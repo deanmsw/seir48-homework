@@ -1,0 +1,9 @@
+<h1>WW2 Battles</h1>
+
+
+<% @battles.each do |battle| %>
+  <p>
+    <%=link_to battle.name, battle_path(battle.id) %>
+
+  </p>
+<% end %>

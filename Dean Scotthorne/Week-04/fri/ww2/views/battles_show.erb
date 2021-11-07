@@ -1,0 +1,23 @@
+<h1>WW2 Battle Information</h1>
+
+<h2>Name of battle:  <%=  @battles.name %>  </h2>
+
+<h3>Description</h3>
+<p><%= @battles.description %></p>
+
+<h3>Theatre: <%= @battles.theatre %></h3>
+
+<h3>Location: <%= @battles.location %></h3>
+
+<h3>Result: <%= @battles.result %></h3>
+
+<h3>Start Date: <%= @battles.start_date %></h3>
+
+<h3>End Date: <%= @battles.end_date %></h3>
+
+<img src="<%= @battles.image %>" alt="<%= @battles.name %>">
+
+<div>
+<a href="/battles/<%= @battles.id %>/edit">Edit</a>
+<a href="/battles/<%= @battles.id %>/delete">Delete</a>
+</div>

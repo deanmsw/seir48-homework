@@ -1,0 +1,76 @@
+<h1>Edit Battle Information</h1>
+
+<form action="<%= battle_path(@battle.id) %>" method="post">
+
+<label>
+  Name Of Battle
+  <input name="name" type="text" required value="<%= @battle.name %>">
+</label>
+
+<label>
+  Theatre Of Battle
+  <input name="theatre" type="text" value="<%= @battle.theatre %>">
+</label>
+
+<label>
+  Location Of Battle
+  <input name="location" type="text" value="<%= @battle.location %>">
+</label>
+
+<label>
+  Axis General
+  <input name="axis_general" type="text" value="<%= @battle.axis_general %>">
+</label>
+
+<label>
+  Axis General Picture
+  <input name="axis_gen_image" type="text" value="<%= @battle.axis_gen_image %>">
+</label>
+
+<label>
+  Allied General
+  <input name="allied_general" type="text" value="<%= @battle.allied_general %>">
+</label>
+
+<label>
+  Allied General Picture
+  <input name="allied_gen_image" type="text" value="<%= @battle.allied_gen_image %>">
+</label>
+
+<label>
+  Axis Casualties
+  <input name="axis_casualties" type="number" value="<%= @battle.axis_casualties %>">
+</label>
+
+<label>
+  Allied Casualties
+  <input name="allied_casualties" type="number" value="<%= @battle.allied_casualties %>">
+</label>
+
+<label>
+  Result Of Battle
+  <input name="result" type="text" value="<%= @battle.result %>">
+</label>
+
+<label>
+  Date Battle Began
+  <input name="start_date" type="date" value="<%= @battle.start_date %>">
+</label>
+
+<label>
+  Date Battle Ended
+  <input name="end_date" type="date" value="<%= @battle.start_date %>">
+</label>
+
+<label>
+  Description Of Battle
+  <input name="description" type="text" value="<%= @battle.description %>">
+</label>
+
+<label>
+  Image Of Battle
+  <input name="image" type="text" value="<%= @battle.image %>">
+</label>
+
+<button>Edit Battle</button>
+</form>

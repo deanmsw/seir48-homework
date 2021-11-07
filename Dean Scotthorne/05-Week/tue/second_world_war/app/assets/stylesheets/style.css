@@ -1,0 +1,31 @@
+body {
+  background-color: aliceblue;
+
+}
+
+
+.h1 {
+  text-align: center;
+  font-size: 50px;
+  text-decoration: underline;
+}
+.locations {
+  display: grid;
+  text-align: center;
+
+}
+.h2 {
+  text-align: center;
+  font-size: 40px;
+  text-decoration: underline;
+}
+
+
+
+.container {
+  max-height: 200px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+
+}

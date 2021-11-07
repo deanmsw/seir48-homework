@@ -1,0 +1,11 @@
+<h1>WW2 Leaders</h1>
+
+<% @leaders.each do |leader| %>
+
+  <p>
+    <a href="/leaders/<%= leader.id%>">
+      <%= leader.surname %>
+    </a>
+  </p>
+
+<% end %>

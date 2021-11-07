@@ -95,16 +95,16 @@ console.log(triangleIDer(triangleE));
 // Example
 //
 const cartForParty = {
-  banana: "1.25",
-  handkerchief: ".99",
-  Tshirt: "25.01",
+  banana: 1.25,
+  handkerchief: 0.99,
+  Tshirt: 25.01,
   apple: "0.60",
   nalgene: "10.34",
   proteinShake: "22.36"
 };
 const cashRegister = (obj) => {
-   for (let i = 0; i < cartForParty.length; i++) {
-    const itemName = Object.keys(obj);
+   for (let i = 0; i < cartForParty; i++) {
+    const itemName = Object.keys(obj)[i];
     const itemPrice = Object.values(obj);
 
 };

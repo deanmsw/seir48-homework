@@ -1,0 +1,51 @@
+<div class="container">
+
+<h1 class="h1"><%= @battle.name %></h1>
+
+<h2 class="h2">Geography</h2>
+
+<div class="locations">
+<h2>Theatre: <%= @battle.theatre  %></h2>
+
+<h2>Location: <%= @battle.location %></h2>
+</div>
+
+<h2 class="h2">Leaders</h2>
+
+
+<div class="locations">
+<h2>Main Axis General: <%= @battle.axis_general %></h2>
+</div>
+
+<div class="feature">
+<%= image_tag @battle.axis_gen_image if @battle.axis_gen_image.present? %>
+</div>
+
+<div class="locations">
+<h2>Main Allied General: <%= @battle.allied_general %></h2>
+</div>
+
+<div class="feature">
+<%= image_tag @battle.allied_gen_image, :class => 'feature' if @battle.allied_gen_image.present? %>
+</div>
+
+
+
+<h2>Axis Casualties: <%= @battle.axis_casualties %></h2>
+
+<h2>Allied Casualties: <%= @battle.allied_casualties %></h2>
+
+<h2>Result of Battle: <%= @battle.result %></h2>
+
+<h2>Date Battle began: <%= @battle.start_date %></h2>
+
+<h2>Date Battle ended: <%= @battle.end_date %></h2>
+
+<h2>Description of Battle: </h2>
+<p><%= @battle.description %></p>
+
+<%= image_tag @battle.image, :class => 'feature' if @battle.image.present? %>
+
+<%= link_to 'Edit Battle', edit_battle_path%>
+<%= button_to 'Delete battle', battle_path(@battle.id), :method => 'delete' %>
+</div>

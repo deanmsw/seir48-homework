@@ -1,0 +1,12 @@
+<h1>WW2 Battles</h1>
+
+
+<% @battles.each do |battle| %>
+
+  <p>
+    <a href="/battles/<%= battle.id%>">
+      <%= battle.name %>
+    </a>
+  </p>
+
+<% end %>
